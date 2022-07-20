@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GuiAR</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#">
+        <img id="logo_web" src="img/logo.png" alt="logo" />
+      </a>
+      <ul>
+        <li class="nav-item">
+          <a href="#que_es">Qué es</a>
+        </li>
+        <li class="nav-item">
+          <a href="#pasos_guiar">Pasos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#descargar_App">Descargar</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <!------------------------------------------------------------------------------HOME----------------------------------------------------------------------------------------------------------------->
+    <section class="home_section">
+      <img class="fondo_principal" src="./img/fondo.jpg" alt="fondo glaciar">
+      <main class="principal_container">
+        <h1>Gui<b>AR</b></h1>
+        <br />
+        <p>
+          ¡La app ideal para los viajeros que quieren disfrutar Argentina!
+        </p>
+        <a href="#" class="btn_descargar" id="boton_descargar_app">Descargar</a>
+      </main>
+      <article>
+        <p id="descripcion">
+          ¡Organizá tu viaje con GuiAR y aprovechá tus vacaciones al máximo!
+          <br />
+          Descubrí lugares increíbles de Argentina y conocé su cultura y tips
+          imperdibles <br />
+          Disfrutá con beneficios, descuentos y premios exclusivos
+        </p>
+      </article>
+    </section>
+
+    <!------------------------------------------------------------------------------DESCRIPCION----------------------------------------------------------------------------------------------------------------->
+
+    <section class="description_section">
+      <h2>¡Conoce mas sobre nuestra APP!</h2>
+      <h3>Aventurate a descubrirlas</h3>
+      <div class="paisaje_container">
+        <!--* Card 1 -->
+        <div class="paisaje">
+          <img src="./img/02-montañas.png" alt="info 1" class="info-paisaje" />
+          <p>
+            ¡Organizá tu viaje con GuiAR y aprovechá tus vacaciones al máximo!
+          </p>
+        </div>
+        <!--* Card 2 -->
+        <div class="paisaje">
+          <img src="./img/04-churrasco.png" alt="info 1" class="info-paisaje" />
+          <p>
+            Descubrí lugares increíbles de Argentina y conocé su cultura y tips
+            imperdibles
+          </p>
+        </div>
+        <!--* Card 3 -->
+        <div class="paisaje">
+          <img src="./img/03-cataratas.png" alt="info 1" class="info-paisaje" />
+          <p>Disfrutá con beneficios, descuentos y premios exclusivos</p>
+        </div>
+      </div>
+    </section>
+
+      <!------------------------------------------------------------------------------MONTAÑA--------------------------------------------------------->
+
+
+    <section class="montaña_section">
+      <img class="fondo_glaciar" src="./img/07-glaciar.png" alt="fondo glaciar">
+    </section>
+
+
+      <!------------------------------------------------------------------------------DESCARGAR-APP--------------------------------------------------------->
+
+      
+
+<section class="descargar_section">
+  <main class="descargar_contenedor">
+    <div class="img_cel">
+        <img src="img/08-celu.png">
+    </div>
+    <div class="text_descargar">
+      <h1>¡Descargá la app!</h1>
+      <p>¡Empezá a organizar tu viaje ahora! <br>Disponible para Android y IOS</p>
+
+      <div class="img_descargar">
+        <a href="#"><img src="img/10-itunes.png" alt=""></a>
+        <a href="#"><img src="img/11-google-play.png" alt=""></a></a>
+      </div>
+    </div>
+  </main>   
+</section>
+
+
+      <!------------------------------------------------------------------------------FORMULARIO--------------------------------------------------------->
+
+<section class="formulario_section">
+
+  <main class="contacto_contenedor">
+     <div class="text-center">   
+       <h1>Contacto</h1>
+       <p class="contact_blanco">¿Tenés dudas? Comunicate con nosotros</p>
+ </div>
+      <div>
+        <form class="form-container" action="posteo.php" method="post">
+         
+            <div class="form-group"> <!------------------------------------------------------------------------------------------------------------input email--->
+              <input type="text" class="form-control" aria-label="Large" id="Input1" placeholder="Nombre y Apellido">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" aria-label="Large" id="Input2" placeholder="Email">
+            </div> 
+           
+            <textarea class="form-control" placeholder="Escribir Mensaje" rows="5"></textarea><!----------------area de escribi mensaje---->
+            <button type="submit" class="btn btn-primary btn-block mt-2">Enviar Mensaje</button>
+       </form> 
+    </div>  
+  </main>
+</section>
+  
+
+ <!------------------------------------------------------------------------------FOOTER----------------------------------------------------------------------------------------------------------------->
+   
+    <footer class="footer_section">
+      <main class="footer_container">
+
+          <img class="logo_guiar_footer" src="img/GUIAR-LOGO-BLANCO.png" alt="logo guiar" />
+
+          <div class="footer_logo">
+            <a href="#"
+              ><img
+                src="./img/13-facebook.png"
+                width="45"
+                height="45"
+                title="Facebook"
+                alt="Facebook "
+                class="img-footer"
+            /></a>
+            <a href="#"
+              ><img
+                src="./img/14-twitter.png"
+                width="45"
+                height="45"
+                title="Facebook"
+                alt="Facebook"
+                class="img-footer"
+            /></a>
+            <a href="#"
+              ><img
+                src="./img/15-instagram.png"
+                width="45"
+                height="45"
+                title="Facebook"
+                alt="Facebook"
+                class="img-footer"
+            /></a>
+            <a href="#"
+              ><img
+                src="./img/16-youtube.png"
+                width="45"
+                height="45"
+                title="Facebook"
+                alt="Facebook"
+                class="img-footer"
+            /></a>
+          </div>
+
+          <div
+            class="text-center"
+          >
+            <img
+              src="img/12-LOGO-ARGENTINA-BLANCO.png"
+              class="img-footer circulo_arg"
+              alt="logo argentina"
+            />
+          </div>
+
+          <div
+            class="text-center"
+          >
+          </div>
+      </main>
+      <p class="footer_terminos_condiciones">
+        Términos y condiciones | Prensa | Soporte | Reglas | Políticas de
+        Privacidad
+      </p>
+    </footer>
+  </body>
+</html>
