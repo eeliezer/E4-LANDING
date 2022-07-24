@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
     <title>GuiAR</title>
   </head>
   <body>
@@ -12,12 +13,14 @@
       <a href="#">
         <img id="logo_web" src="img/logo.png" alt="logo" />
       </a>
-      <ul>
+      <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" name="" id="toggle-menu">
+      <ul class="navbar-list">
         <li class="nav-item">
-          <a href="#que_es">Qué es</a>
+          <a href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#pasos_guiar">Pasos</a>
+          <a href="#que_es">¿Qué es?</a>
         </li>
         <li class="nav-item">
           <a href="#descargar_App">Descargar</a>
@@ -28,7 +31,7 @@
       </ul>
     </nav>
     <!------------------------------------------------------------------------------HOME----------------------------------------------------------------------------------------------------------------->
-    <section class="home_section">
+    <section class="home_section" id="home">
       <img class="fondo_principal" src="./img/fondo.jpg" alt="fondo glaciar">
       <main class="principal_container">
         <h1>Gui<b>AR</b></h1>
@@ -51,7 +54,7 @@
 
     <!------------------------------------------------------------------------------DESCRIPCION----------------------------------------------------------------------------------------------------------------->
 
-    <section class="description_section">
+    <section class="description_section" id="que_es">
       <h2>¡Conoce mas sobre nuestra APP!</h2>
       <h3>Aventurate a descubrirlas</h3>
       <div class="paisaje_container">
@@ -90,7 +93,7 @@
 
       
 
-<section class="descargar_section">
+<section class="descargar_section" id="descargar_App">
   <main class="descargar_contenedor">
     <div class="img_cel">
         <img src="img/08-celu.png">
@@ -110,7 +113,7 @@
 
       <!------------------------------------------------------------------------------FORMULARIO--------------------------------------------------------->
 
-<section class="formulario_section">
+<section class="formulario_section" id="contacto">
 
   <main class="contacto_contenedor">
      <div class="text-center">   
@@ -196,10 +199,10 @@
           >
           </div>
       </main>
-      <p class="footer_terminos_condiciones">
-        Términos y condiciones | Prensa | Soporte | Reglas | Políticas de
-        Privacidad
-      </p>
+      <ul class="footer_terminos_condiciones">
+        <a href="#">Términos y condiciones</a> <p> | </p> <a href="#">Prensa</a href=> <p> | </p> <a href="#">Soporte</a href=> <p> | </p> <a href="#">Reglas</a href=> <p> | </p> <a href="#">Políticas de
+        Privacidad</a>
+      </ul>
     </footer>
   </body>
 </html>

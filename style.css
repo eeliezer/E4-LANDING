@@ -4,7 +4,6 @@
     text-decoration: none;
     list-style: none;
 }
-
 /* Tipografias */
 
 @font-face {
@@ -91,7 +90,23 @@ p{
     justify-content: space-between;
     padding: .5rem 1rem;
     height: 75px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
 }
+
+.navbar i {
+    font-size: 36px;
+    display: none;
+    padding-right: 70px;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+
 
 .navbar ul a{
     font-size: 1.4rem;
@@ -121,6 +136,7 @@ p{
     position: absolute;
     width: 100%;
     z-index: -1;
+    top: 90px;
 }
 
 .principal_container {
@@ -281,6 +297,11 @@ p{
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+
+.contacto_contenedor .form-container{
+    font-family: Gotham Rounded Medium;
+}
+
 textarea {
     resize: none;
     height: 25vh;
@@ -363,6 +384,26 @@ background: rgb(0, 170, 218);
     top: 3vh;
 }
 
+.footer_terminos_condiciones a{
+    font-family: Gotham Rounded Light;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.footer_terminos_condiciones p{
+    font-family: Gotham Rounded Light;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
 .footer_terminos_condiciones{
     display: flex;
     justify-content: center;
@@ -370,4 +411,175 @@ background: rgb(0, 170, 218);
 
 .img-footer{
     padding: 20px;
+}
+
+@media (max-width: 1600px) {
+    .fondo_principal{
+        width: 130%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .fondo_principal{
+        width: 150%;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    .fondo_principal{
+        width: 190%;
+    }
+
+}
+
+
+@media (max-width: 840px) {
+
+    .navbar ul{
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-200%);
+        transition: all 0.4s ease-out;
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    .navbar ul li{
+        padding-top: 125px;
+        padding-right: 50px;
+    }
+
+    #toggle-menu:checked ~ .navbar-list {
+        transform: translateY(0%);
+        transition: all 0.4s ease-in;
+    }
+
+    .home_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: -50px;
+    }
+
+    .home_section h1{
+        font-size: 4em;
+        margin-left: 0px;
+    }
+
+    .home_section p{
+        text-align: center;
+        margin-left: 0px;
+        font-size: 1.8rem;
+    }
+
+    #descripcion{
+        margin-top: -55px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .fondo_principal{
+        width: 260%;
+    }
+
+    .principal_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn_descargar {
+        margin-left: 0px;
+    }
+
+    .paisaje_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description_section{
+        height: 90em;
+        background: linear-gradient(180deg, rgb(255, 255, 255) 80%, rgb(17, 159, 207) 100%);
+    }
+
+    .descargar_section h1{
+        font-size: 4em;
+    }
+
+    .descargar_section p {
+        color: rgb(0, 170, 218);
+        font-size: 30px;
+        text-align: center;
+        padding: 15px;
+
+    }
+
+    .descargar_contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text_descargar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto_contenedor h1{
+            font-family: Gotham Rounded medium;
+            color: white;
+            font-size: 5em;
+            text-align: center;
+    }
+    .contacto_contenedor p{
+        font-family: Gotham Rounded Medium;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    .footer_section .footer_container .logo_guiar_footer {
+        width: 20%;
+        position: relative;
+        top: 1vh;
+      }
+
+      .footer_terminos_condiciones {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+    }
+
+      .footer_terminos_condiciones a {
+        font-family: Gotham Rounded Light;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+        list-style: none;
+        font-size: 1rem;
+      }
+}
+
+@media (max-width: 576px) {
+    .fondo_principal{
+        width: 350%;
+    }
+
 }
