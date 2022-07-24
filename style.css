@@ -55,6 +55,12 @@ body{
 a {
     color: rgb(0, 170, 218);
     font-family: Gotham Rounded light;
+    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+    transition: color 1s; /* For modern browsers */
+}
+
+a:hover {
+    color: #303030;
 }
 
 h1 {
