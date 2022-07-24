@@ -527,10 +527,19 @@ background: rgb(0, 170, 218);
 
     }
 
+    .img_cel img{
+        width: 100%;
+    }
+
     .descargar_contenedor{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    
+    .img_descargar{    
+    display: flex;
+    flex-direction: column;
     }
 
     .text_descargar{
